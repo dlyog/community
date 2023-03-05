@@ -12,7 +12,7 @@ function loadContent() {
         var html = '';
         for (var i = 0; i < news.length; i++) {
             if (news[i].title && news[i].link) { // Check that the required fields are present
-                html += '<li><a href="#" onclick="openPopup(\'' + news[i].link + '\')">' + news[i].title + '</a></li>';
+                html += '<li><a href="#" onclick="openPopup(\'' + news[i].link + '\',\'' + news[i].title + '\')">' + news[i].title + '</a></li>';
             } else if (news[i].title || news[i].link) { // Check if either field is present
                 console.log('Warning: missing data in row ' + (i+1)); // Log a warning message if data is missing
             }
@@ -23,12 +23,12 @@ function loadContent() {
     });
 }
 
-function openPopup(link) {
+function openPopup(link,title) {
     var popupHTML = '<div class="modal fade" id="popup" tabindex="-1" aria-labelledby="popupLabel" aria-hidden="true">';
     popupHTML += '<div class="modal-dialog modal-dialog-centered">';
     popupHTML += '<div class="modal-content">';
     popupHTML += '<div class="modal-header">';
-    popupHTML += '<h5 class="modal-title" id="popupLabel">Popup Title</h5>';
+    popupHTML += '<h5 class="modal-title" id="popupLabel">'+title+'</h5>';
     popupHTML += '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
     popupHTML += '<span aria-hidden="true">&times;</span>';
     popupHTML += '</button>';
