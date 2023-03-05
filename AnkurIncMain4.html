@@ -1,0 +1,2414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ankur - Bengali Cultural Association, Sacramento, CA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="chobi/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="chobi/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="chobi/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="chobi/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="chobi/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="chobi/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="chobi/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="chobi/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="chobi/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="chobi/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="chobi/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="chobi/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="chobi/icons/favicon-16x16.png">
+    <link rel="manifest" href="chobi/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="chobi/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+
+
+        body {
+            font: 400 14px/1.8 Lato, sans-serif;
+            color: #777;
+            overflow-x: hidden;
+        }
+
+        h3, h4 {
+            margin: 10px 0 30px 0;
+            letter-spacing: 10px;
+            font-size: 22px;
+            color: #ff3300;
+            text-shadow: 1px 1px #4d4d4d;
+            /*color: #996666 !important*/
+        }
+
+        .header {
+            background-color: #ffffff;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 1px;
+            opacity: .95;
+            text-align: center;
+            vertical-align: central;
+            padding: 0 0 0 0;
+        }
+
+        .header-btn {
+            padding: 1px 1px;
+            /*            font-size: 11px !important;
+            letter-spacing: 1px;
+            opacity: .95;*/
+        }
+
+        .container {
+            padding: 80px 80px;
+        }
+
+        .person {
+            border: 10px solid transparent;
+            margin-bottom: 25px;
+            width: 80%;
+            height: 80%;
+            opacity: 0.7;
+        }
+
+            .person:hover {
+                border-color: #e6e6e6 !important;
+            }
+
+        .stackem div {
+            width: 100%;
+        }
+
+        .carousel-inner img {
+            -webkit-filter: grayscale(1%);
+            filter: grayscale(1%); /* make all photos black and white */
+            width: 100%; /* Set width to 100% */
+            margin: auto;
+            padding-top: 0px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: 5;
+            width: 100%;
+            padding-left: 0;
+            margin-left: 1%;
+            text-align: center;
+            list-style: none;
+            margin: -10px 0 0px 0;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 20px;
+            background: rgba(0, 0, 0, 0.45); /* Black background with transparency */
+            color: #f1f1f1;
+            width: 100%;
+            padding: 0px;
+        }
+
+            .carousel-caption h3 {
+                color: #fff !important;
+                position: initial;
+                text-shadow: 2px 2px #333333;
+                margin: -20px 0 10px 0;
+            }
+
+            .carousel-caption p {
+                text-shadow: 1.5px 1.5px #333333;
+            }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        /* Container holding the image and the text */
+        .container-img {
+            position: relative;
+            text-align: center;
+            color: #4d4d4d /*mediumvioletred*/;
+            /*text-shadow: .35px .35px #333333;*/
+        }
+
+        /* Bottom left text */
+        .bottom-left {
+            position: absolute;
+            bottom: 0px;
+            left: 3px;
+        }
+
+        /* Top left text */
+        .top-left {
+            position: absolute;
+            top: 5px;
+            left: 15px;
+        }
+        /* Top Cener text */
+        .top-center {
+            position: absolute;
+            top: 13%;
+            left: 50%;
+            right: -50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Top right text */
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        /* Bottom right text */
+        .bottom-right {
+            position: absolute;
+            bottom: 0px;
+            right: -17px;
+        }
+
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+        @media (max-width: 600px) {
+            .carousel-caption p {
+                display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+            }
+            /*.header {
+                display: none;
+            }*/
+        }
+
+        .bg-1 {
+            background: #2d2d30;
+            color: #bdbdbd;
+        }
+
+            .bg-1 h3 {
+                color: orangered /*#fff*/;
+            }
+
+            .bg-1 p {
+                font-style: normal;
+            }
+
+        .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        .list-group-item:last-child {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .thumbnail {
+            /*padding: 10px 0 5px 0;*/
+            padding: 5px;
+            /*border: none;
+            border-radius: 0;*/
+            border-radius: 21px;
+            border: 2px solid #d9d9d9;
+        }
+
+            .thumbnail p {
+                margin-top: 15px;
+                color: #555;
+            }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #666 /*#333*/;
+            color: #f1f1f1;
+            border-radius: 5px;
+            transition: .2s;
+        }
+
+            .btn:hover, .btn:focus {
+                border: 1px solid #333;
+                background-color: #fff;
+                color: #000;
+            }
+
+        .modal-header, h4, .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .modal-header, .modal-body {
+            padding: 10px 15px;
+        }
+
+        .nav-tabs li a {
+            color: #4d4d4d /*#777*/;
+        }
+
+        #googleMap {
+            width: 100%;
+            height: 400px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        .navbar {
+            font-family: Montserrat, sans-serif;
+            margin-bottom: 0;
+            background-color: #ffffff;
+            border: 0;
+            font-size: 9px !important;
+            letter-spacing: 1px;
+            opacity: .95;
+        }
+
+            .navbar li a, .navbar .navbar-brand {
+                color: #2d2d30 !important;
+                padding: 3px 11px 0 11px;
+            }
+
+        .navbar-brand img {
+            display: normal;
+        }
+
+        .navbar-nav li a:hover {
+            color: #18181b !important;
+            background-color: #f2f2f3 /*#ffffe6*/ !important;
+            text-shadow: .3px .3px #4d4d4d;
+        }
+
+        .navbar-nav li.active a {
+            color: orangered !important;
+            background-color: #f2f2f3 /*#ffffcc*/ !important;
+            text-shadow: .3px .3px orangered;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        .dropdown-menu li a {
+            /*color: #000 !important;*/
+            /*color: #cc0099 !important;*/
+            color: #2d2d30 !important;
+        }
+
+            .dropdown-menu li a:hover {
+                color: #cc0099 !important;
+                background-color: #ffffe6 !important;
+            }
+
+        /* Drop Down Menue*/
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        /* End Drop down menue*/
+
+
+        footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            padding: 20px;
+            font-size: 10px;
+        }
+
+            footer a {
+                color: #f5f5f5;
+                padding: 10px 10px 10px 10px;
+            }
+
+                footer a:hover {
+                    color: #a6a6a6;
+                    text-decoration: none;
+                }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .fa {
+            padding: 7px 4px 0px 4px;
+            font-size: 24px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 3px 3px;
+            border-radius: 25%;
+        }
+
+            .fa:hover {
+                color: white;
+                opacity: 0.7;
+                text-underline-position: left;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        marquee {
+            -webkit-animation: caption 50s linear 0s infinite;
+            padding: 0px 0;
+            border: 0px solid #000;
+            background-color: transparent;
+            /*-webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .5), 0px 1px 0px rgba(250, 250, 250, .2);
+            box-shadow: inset 0px 2px 2px rgba(0, 0, 0, .5), 0px 1px 0px rgba(250, 250, 250, .2);*/
+            -webkit-transition: background-color 350ms;
+            -moz-transition: background-color 350ms;
+            transition: background-color 350ms;
+            overflow: hidden;
+            overflow-x: -webkit-marquee;
+            -webkit-marquee-direction: left;
+            -webkit-marquee-style: scroll;
+            -webkit-marquee-speed: normal;
+            -webkit-marquee-increment: small;
+            -webkit-marquee-repetition: 5;
+            overflow-x: marquee-line;
+            marquee-direction: forward;
+            marquee-style: loop;
+            marquee-speed: slow;
+            marquee-play-count: 5;
+            color: #28282a;
+            background: transparent;
+        }
+
+        .header-btn {
+            padding: 1px 1px;
+            color: #808080;
+        }
+
+            .header-btn:hover {
+                color: red;
+            }
+    </style>
+
+    <style>
+    #thover{
+  position:fixed;
+  background:#000;
+  width:100%;
+  height:100%;
+  opacity: .6
+}
+
+#tpopup{
+  position:absolute;
+  width:600px;
+  height:180px;
+  background:#fff;
+  left:50%;
+  top:50%;
+  border-radius:5px;
+  padding:60px 0;
+  margin-left:-320px; /* width/2 + padding-left */
+  margin-top:-150px; /* height/2 + padding-top */
+  text-align:center;
+  box-shadow:0 0 10px 0 #000;
+}
+#tclose{
+  position:absolute;
+  background:black;
+  color:white;
+  right:-15px;
+  top:-15px;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  line-height:30px;
+  text-align:center;
+  font-size:8px;
+  font-weight:bold;
+  font-family:'Arial Black', Arial, sans-serif;
+  cursor:pointer;
+  box-shadow:0 0 10px 0 #000;
+}
+
+.mypopup {
+    position: absolute;
+    width:50%;
+    background-color:#8DA5C6;
+    z-index: 999;
+}
+    </style>
+
+<script>
+
+$(document).ready(function(){
+  
+  
+  
+});
+
+
+</script>
+
+  
+    
+    <!--iframe type="audio/mp3" width="0" height="0" src="Music/DhakBodhon.mp3" frameborder="0" loop="1" allowfullscreen></iframe-->
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="10">
+
+
+
+    <div id="header" class="container-fluid check_class_1 bg-header collapse navbar-collapse">
+        <div class="header row">
+            <div class="col-sm-2 col-xs-2" style="text-align:right">
+                <br />
+                <img style="width:75%" src="chobi/AnkurLogo.gif" /><br />
+                <!--<p style="font-size:xx-small; text-align:center">A 501(c)(3) Non-profit Organization IRS TAX Id No(EID)-262948609</p>-->
+            </div>
+            <div class="col-xs-8 col-xs-8 container-img image-responsive" text-align: center>
+                <img style="width:110%" class="center" src="chobi/banner.jpg" />
+                <div class="top-left" style="font-size:1.2vw;">
+                    Sacramento & Northern California Bengali Cultural Association
+                    <p style="font-size:xx-small; text-align:left">A 501(c)(3) Non-profit Organization IRS TAX Id
+                        No(EID)-262948609</p>
+                </div>
+            </div>
+            <div class="col-sm-2 col-xs-2" style="text-align:right">
+                <br />
+                <img class="img-circle right" style="width:60%" src="chobi/2kaFwOkA.gif" />
+                <!--  <img class="img-responsive" style="width:100%" src="chobi/birdf.gif" />
+                                <a href="https://smile.amazon.com/ch/26-2948609" target="_blank"><img src="chobi/AmazonSmile.gif" style="width:100%; " title="Support Ankur Inc. When you shop here Amazon donates us." /></a>
+
+                -->
+            </div>
+        </div>
+    </div>
+    <!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <nav class="navbar navbar-default check_class nav_fix_scroll">
+        <div class="container-fluid" id="navbar">
+            <div class="header" width="100%">
+                <table width="100%">
+                    <tr width="100%">
+                        <td width="24%">
+                            <a class="navbar-brand" href="#myPage"> <img id="BLogo" style="visibility:hidden" class="img-responsive"
+                                    src="chobi/AnkurLogo.gif" width="100" title="Ankur, a Bengali Indian Cultural Association"></a>
+                            <!--<p ir="regingo" style="font-size:xx-small; text-align:left">A 501(c)(3) Non-profit Organization IRS TAX Id No(EID)-262948609</p>-->
+                        </td>
+                        <td width="70%" align="center">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav navbar-center">
+                                    <li><a href="#myPage"><img src="chobi/icons/Home.jpg" /><br />HOME</a></li>
+                                    <li><a href="#events"><img src="chobi/icons/Events.jpg" /><br />EVENTS</a></li>
+                                    <!--<li><a href="#school"><img src="chobi/icons/ISchool.jpg" /><br />ISCHOOL</a></li>-->
+                                    <li><a href="#spon"><img src="chobi/icons/Sponsors.jpg" /><br />SPONSORS</a></li>
+                                    <li><a href="#maneg"><img src="chobi/icons/Management.jpg" /><br />MANAGEMENT</a></li>
+                                    <li><a href="#gallery"><img src="chobi/icons/Gallery.jpg" /><br />GALLERY</a></li>
+                                    <li><a href="#aboutus"><img src="chobi/icons/abtusico.gif" /><br />ABOUT US</a></li>
+                                    <li><a href="#contact"><img src="chobi/icons/joinus.jpg" /><br />JOIN US</a></li>
+                                    <!--<li class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            MORE
+                                            <span class="caret"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#aboutus">About Us</a></li>
+                                            <li><a href="#contact">Contact Us</a></li>
+                                            <li><a href="#">Media</a></li>
+                                        </ul>
+                                    </li>-->
+                                    <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
+                                </ul>
+                            </div>
+                        </td>
+                        <td align="center" class="navbar-left">
+                            <!--<p style="font-size:x-small; font-family:Arialnarrow">A 501(c)(3) Non-profit Organization <br />IRS TAX Id No(EID) - 262948609</p>-->
+                            <!--<img class="img-responsive" src="chobi/IndiaFlag.gif" width="70">-->
+                            <img class="img-responsive" src="chobi/iasico.jpg" width="40" title="Indian Association of Sacramento (IAS)">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid row">
+        <div class="col-sm-3">
+            <div class="carousel-inner">
+                <div class="thumbnail">
+                    <div class="container-img">
+                        <img src="chobi/frame3.jpg" width="120" class="img-rounded" alt="notice" style="width:100%; border-radius: 5%;">
+                        <div class="top-center col-sm-9 col-xs-6" width="100%" style="text-align:center;">
+                            <img class="image-responsive" style="width:30%" src="chobi/WallSwastik.gif" />
+                        </div>
+                        <div class="centered" width="100%" style="font-size:small;">
+
+
+                            
+                            <!--<a>Notice Board</a>-->
+                            <!--<div class="col-sm-8 col-xs-6" style="padding:0px;">
+            <p style="text-align:left; padding:0px;"><strong>Happy 72nd Independence Day!</strong></p>
+        </div>
+            <div class="col-sm-4 col-xs-6">
+            <img class="img-responsive" src="chobi/IndiaFlag.gif" width="100%">
+        </div>--> 
+
+        
+        <p style="text-align:left">
+            Durga Puja <span class="label label-danger">!New</span>
+            <a class="img-circle person" data-toggle="modal" id="dp2020_info" data-target="#dp2020_alert">Durga Pujo 2020</a>
+        </p>
+
+
+
+        <p style="text-align:left">
+            COVID 19 Update <span class="label label-danger"></span>
+            <a class="img-circle person" data-toggle="modal" id="covid19_info" data-target="#covid19_alert">COVID 19</a>
+        </p>
+
+        <p style="text-align:left">
+            Ankur Events 2020 <span class="label label-danger"></span>
+            <a class="img-circle person" data-toggle="modal" data-target="#eventSchedule">Events Schedule</a>
+        </p>
+
+        <p style="text-align:left">
+            Saraswati Puja Schedule <span class="label label-danger"></span>
+           <a class="img-circle person"  data-toggle="modal" data-target="#SPFlyer2020">Saraswati Puja 2020
+               </a>
+       </p>
+
+
+       
+
+   
+                            
+                            
+                           
+
+                            
+
+                            
+                        </div>
+
+                        
+
+                        <div id="AnkurDishari" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <iframe src="http://ankurinc.org/Ankur_HTML5/content/dishari_latest.pdf" width="550" height="700">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="SPFood" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="chobi/s_puja_food2020.png" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+
+
+                        <div id="DPFlyer" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="chobi/DP_Flyer.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="SPFlyer2020" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <img src="chobi/events/evnSaraswati.jpeg" class="img-responsive">
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                        
+                        <div id="FoodVideo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/hDw-znbsdWI"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-left col-sm-9 col-xs-6" width="100%" style="font-size:x-small;">
+                            Please add Ankur inc on your
+                            <a href="https://smile.amazon.com/ch/26-2948609" target="_blank"><img src="chobi/AmazonSmile.gif"
+                                    style="width:80%;" title="Support Ankur Inc. When you shop here, Amazon donates us." /></a>
+                        </div>
+                        <!--<div class="bottom-right" style="text-align:right;">
+        <img src="chobi/newscart.gif" style="width:30%;" />
+    </div>-->
+                    </div>
+                    <marquee direction="left" speed="normal" behavior="loop" style="font-size:small;">
+                        We are covering
+                        <a class="header-btn" href="#myPage"> Carmichael </a>,
+                        <a class="header-btn" href="#myPage"> Citrus Heights </a>,
+                        <a class="header-btn" href="#myPage"> Davis </a>,
+                        <a class="header-btn" href="#myPage"> El Dorado Hills </a>,
+                        <a class="header-btn" href="#myPage"> Elk Grove </a>,
+                        <a class="header-btn" href="#myPage"> Folsom </a>,
+                        <a class="header-btn" href="#myPage"> Gold River </a>,
+                        <a class="header-btn" href="#myPage"> Natomas </a>,
+                        <a class="header-btn" href="#myPage"> Reddin </a>,
+                        <a class="header-btn" href="#myPage"> Rocklin </a>,
+                        <a class="header-btn" href="#myPage"> Roseville </a>,
+                        <a class="header-btn" href="#myPage"> Yuba City </a>
+                    </marquee>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-9">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                    <li data-target="#myCarousel" data-slide-to="6"></li>
+                    <li data-target="#myCarousel" data-slide-to="7"></li>
+                    <li data-target="#myCarousel" data-slide-to="8"></li>
+                    <li data-target="#myCarousel" data-slide-to="9"></li>
+                   
+                </ol>
+                <!-- Wrapper for slides image ratio 1000:430 -->
+                <div class="carousel-inner" role="listbox">
+                    
+<!--                     <div class="item">
+                        <img src="chobi/Saraswati Puja_Flyer 2019.jpg" alt="Durga Puja" width="1000" height="600">
+                    </div> -->
+                    <div class="item active">
+                        <img src="chobi/topic/durga.jpg" alt="Durga Puja" width="1000" height="600">
+                        <div class="carousel-caption">
+                            <h3>DURGA PUJA - দূর্গা পূজা </h3>
+                            <p>Jago durga jago dashoprohorono daharini - Sara bochor opekhha ae din gulir Jonno !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/holiFor.jpg" alt="Camping" width="500">
+                        <div class="carousel-caption">
+                            <h3>Atithi Debobhaba</h3>
+                            <p>
+                                Ankur Sacramento-r registered Bengali Cultural Non-Profit. A melting pot of diverse
+                                communities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/sPuja2.jpg" alt="Holi" width="1000" height="600">
+                        <div class="carousel-caption">
+                            <h3>Puspanjali - পুস্পাঞ্জলি </h3>
+                            <p>Anjali shere nin, eta i last batch, . Bangla band ready hocchhe pechhone.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/Ilish.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>বাংলা আমার সর্ষে ইলিশ !!</h3>
+                            <p>
+                                At Ankur, we take our menu seriously.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/natok.jpg" alt="Diwali Celebration" wsidth="1000" height="600">
+                        <div class="carousel-caption">
+                            <h3>DRAMA</h3>
+                            <p>Under the direction of Kolkata Group Theater veteran, Ankur drama team have received
+                                many accolades. </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/SidurKhela.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>সিঁদুর খেলা </h3>
+                            <p>
+                                Pujo Shesh, kintu anondo utsav shesh hoy na shohoje. Shara bochhor dhorei cholte thake
+                                Ankur er program.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/picnic.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>PICNIC</h3>
+                            <p>Picnic, bus bojhhai kore gaan, hashi thatta. Chalo abar oronye. Luchi, alurdom aar
+                                koasha mangsho.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/holi_kids.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>HOLI</h3>
+                            <p>Holi…. Ronger utsav mete othhe amader baror evong khudera</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/CampFire.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>CAMPING</h3>
+                            <p>Ankur Camping jongoler modhye fire er shamne boshe adda, games aar bhooter golpo.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/camping.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>More fun in camping</h3>
+                            <p>
+                                Picnic shere Ankur tonoya-ra jhapiye porechhe jole..... Oooffff, ja gorom !!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="chobi/topic/ComServ.jpg" alt="Picnic" width="1000" height="700">
+                        <div class="carousel-caption">
+                            <h3>বাঙালীর আড্ডা</h3>
+                            <p>
+                                Ashun. Ankur-er shonge jukto hon. Amra bondhura opekkhay roilam apnar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Container (About us) -->
+    <div id="aboutus" class="container text-center">
+        <h3>ANKUR</h3>
+
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-3 stackem">
+                    <div>
+                        <img src="chobi/topic/newscut.jpg" style="border-radius: 5%" ; class="img-thumbnail" alt="Random Name"
+                            width="300" height="300">
+                    </div>
+                    <div>
+                        <img src="chobi/topic/holi2.jpg" style="border-radius: 5%" ; class="img-thumbnail" alt="Random Name"
+                            width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-sm-3 stackem">
+                    <div>
+                        <img src="chobi/topic/puja_2018_news.jpg" style="border-radius: 5%" ; class="img-thumbnail" alt="Random Name"
+                            width="200" height="600">
+                    </div>
+                </div>
+                <div class="col-sm-6 thumbnail">
+                    <span style="text-align:left">
+                        <p style="text-indent:10px;text-justify: inter-word;">
+                            Like the Young Sprout Unfolding touched by the First Dew drop in Spring, and growing into a
+                            huge tree, Ankur started from a small initiative, and has grown into a huge community
+                            bringing the Bengalis' of Sacramento and Northern California under it's shade.
+                        </p>
+                        <p style="text-indent:10px; text-justify: inter-word;">
+                            However, we are not here to rest. We tirelessly engage in social, cultural, developmental,
+                            and fun activities throughout the year.
+
+                            We are today the Flag-Bearer of Bengali Community from "Epar and Opar" Bangla, recognized
+                            by the local city administration, and a registered Non-Profit, under section A 501(c), with
+                            tax advantage.
+
+                            <br />Want to know about our major events? Want to participate? Want to enjoy the Pujo,
+                            Holi, Bangla Scool? Want to perform, or let your budding youngster take the stage? Want to
+                            just chill with a bunch of amazing people, and dive on a gastronomic adventure? Here you
+                            go... join us and attend some or all of the following activities, and all the events under
+                            "event" section in menu.
+                        </p>
+                        <ul>
+                            <li>
+                                Organizing cultural programs with both adults and the children for our festivals. This
+                                includes our celebrations of Saraswati Puja in Spring and Durga Puja in Fall.
+                            </li>
+                            <li>
+                                Doing social service, especially for the underserved minority population within
+                                Sacramento County.
+                            </li>
+                            <li>
+                                Helping people at home (USA) and abroad (India), in times of need through fund-raising
+                                and other charitable activities.
+                            </li>
+                            <li>
+                                Conducting various other social events such as (festival of colors), Bengali New Year,
+                                Picnic etc.
+                            </li>
+                            <li>
+                                Providing a forum for exchanging ideas and views with various non-profit organizations
+                                of similar interests.
+                            </li>
+                            <!--<p>We attempt to bring the community together and keep them actively involved in various social events throughout the year. Our major activities include, but not limited to the following:</p>
+
+                            <ul>
+                                <li>Organizing cultural programs with both adults and the children for our festivals. This includes our celebrations of Saraswati Puja in Spring and Durga Puja in Fall. </li>
+                                <li>Doing social service, especially for the underserved minority population within Sacramento County.</li>
+                                <li>Helping people at home (USA) and abroad (India), in times of need through fund-raising and other charitable activities.</li>
+                                <li>Conducting various other social events such as (festival of colors), Bengali New Year, Picnic etc.</li>
+                                <li>Providing a forum for exchanging ideas and views with various non-profit organizations of similar interests.</li>-->
+                            <br />
+                            <br />
+                            <br />
+                            <img src="chobi/2kaFwOkA.gif" class="img-rounded" width="21%">
+                            <img src="chobi/iasFull.png" class="img-rounded" width="75%">
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container (Enevt Section) -->
+    <div id="events" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">EVENTS</h3>
+            <p class="text-center">In Bengal and India there are more occasions than the number of months in a year ~
+                বারো মাসে তেরো পার্বণ !</p>
+            <!--<p>Ankur has planned events throughout the year. Everyone is invited and welcome to attend these events. If needed, Ankur will provide a certificate of Volunteering Hours of Community Service related events.</p>-->
+            <!--<ul class="list-group">
+                <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">November <span class="badge">3</span></li>
+            </ul>-->
+            <!--
+            ADD Start
+            -->
+            <div id="EventCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#EventCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#EventCarousel" data-slide-to="1"></li>
+                    <li data-target="#EventCarousel" data-slide-to="2"></li>
+                    <li data-target="#EventCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides image ratio 3:2 -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/Ankur_Schedule.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+
+                                    <p><strong>2020 Schedule</strong></p>
+                                    <p>Ankur Events</p>
+                                    <button class="btn" data-toggle="modal" data-target="#eventSchedule">Details</button>
+                                </div>
+                            </div>
+                            <!--div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnDurga.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+
+                                    <p><strong>Durga puja</strong></p>
+                                    <p>Sarod Utsav</p>
+                                    <button class="btn" data-toggle="modal" data-target="#DPFlyer">Details</button>
+                                </div>
+                            </div-->
+                            <div class="col-sm-4">
+                                <!--<div class="thumbnail">
+                                    <img src="chobi/events/evn1.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Durga Puja 2018</strong></p>
+                                    <p>Ankur presents Anwesha Dutta</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>-->
+                                <div class="thumbnail">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="100" style="border-radius: 10%;" src="https://www.youtube.com/embed/x11t8uS0nWI"
+                                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                    <br />
+                                    <p><strong>Durga Puja</strong></p>
+                                    <p>Oct 2020</p>
+                                    <button class="btn" data-toggle="modal" data-target="#DPFlyer">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <!--<img src="chobi/events/evn2.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">-->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="100" style="border-radius: 10%;" src="https://www.youtube.com/embed/WJAe4_Rhp8c"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <br>
+                                    <p><strong>Durga Puja</strong></p>
+                                    <p>Ankur Musical Nights</p>
+                                    <button class="btn" data-toggle="modal" data-target="#DPFlyer">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnPicnic.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Mega Picnic</strong></p>
+                                    <p>July</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnCamp.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Annual Camping</strong></p>
+                                    <p>June </p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnFis.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Fishing</strong></p>
+                                    <p>Bengali cannot live without Fish</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnSaraswati.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Basant Panchami - Festival of Knowledge</strong></p>
+                                    <p>February 2020</p>
+                                    <button class="btn" data-toggle="modal" data-target="#sPuja">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnHoli1.jpeg" alt="Holi" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Holi - দোল উৎসব</strong></p>
+                                    <p><strong>Lew Howard Community Park, Folsom</strong></p>
+                                    <p>March 2020</p>
+                                    <button class="btn" data-toggle="modal" data-target="#holiFlyer1">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnComSer.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Community Service</strong></p>
+                                    <p>TDB</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row text-center">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/vad.png" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Volunteer Appreciation Day</strong></p>
+                                    <p>Sprit of Team Ankur </p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnDiwali.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>Lakshmi Puja</strong></p>
+                                    <p>Celebration of goddess of wealth</p>
+                                    <p>Oct 2020</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <img src="chobi/events/evnNoboBors.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                                    <p><strong>New Year Celebration</strong></p>
+                                    <p>Dec 31, Year End Party</p>
+                                    <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#EventCarousel" style="width:30px" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#EventCarousel" style="width:30px" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Add End -->
+            <!--<div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="chobi/durgaE.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                        <p><strong>Durga puja</strong></p>
+
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="chobi/holiE.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                        <p><strong>Holi</strong></p>
+
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <img src="chobi/diwaliE.jpg" alt="Ankur" width="400" height="300" style="border-radius: 10%;">
+                        <p><strong>Diwali</strong></p>
+
+                        <button class="btn" data-toggle="modal" data-target="#myModal">Details</button>
+                    </div>
+                </div>
+            </div>-->
+            <div class="container-fluid" id="accordion">
+                <div class="row" style="align-content:center">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-2">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Events for the year 2020-2021
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <!--<div class="card-body container-fluid">-->
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Basant Panchami - Festival of Knowledge:
+                                    </td>
+                                    <td>
+                                        সরস্বতী বন্দনা
+                                    </td>
+                                    <td>
+                                        February 1, 2020
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Holi Festival of Color:
+                                    </td>
+                                    <td>
+                                        দোল উৎসব
+                                    </td>
+                                    <td>
+                                        March 13, 2020
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ankur's Sports Day:
+                                    </td>
+                                    <td>স্পোর্টস ডে</td>
+                                    <td>
+                                        May 23, 2020
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Mega Picnic:
+                                    </td>
+                                    <td>
+                                        বৃহৎ চড়ুইভাতি
+                                    </td>
+                                    <td>June 20, 2020
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        NABC 2020:
+                                    </td>
+                                    <td>
+                                        NABC 2020
+                                    </td>
+                                    <td>July 3, 4, 5 2020
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                            Annual Camping:
+                                        </td>
+                                        <td>বার্ষিক ক্যাম্পিং</td>
+                                        <td>
+                                            July 17, 18,  19, 2020
+                                        </td>
+                                    </tr>
+                            
+                    
+                              
+
+                                <tr>
+                                    <td>
+                                        Sharodotsav / Durga Puja 2020:
+                                    </td>
+                                    <td>
+                                        দূর্গোৎসব
+                                    </td>
+                                    <td>
+                                        October 2020
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Lakshmi Puja 2020:
+                                    </td>
+                                    <td>
+                                        এসো মা লক্ষ্মী
+                                    </td>
+                                    <td>
+                                        October 2020
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        New Year Celebration:
+                                    </td>
+                                    <td>
+                                        ইংরাজি নতুন বছর উদযাপন
+                                    </td>
+                                    <td>
+                                        December 31
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4><span class="glyphicon glyphicon-lock"></span> Details</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                            <strong>We are working on it !</strong>
+                            <img src="chobi/Ganesh.gif" width="50%">
+                            <!--<div class="form-group">
+                                <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                                <input type="number" class="form-control" id="psw" placeholder="How many?">
+                            </div>
+                            <div class="form-group">
+                                <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                                <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-block">
+                                Pay
+                                <span class="glyphicon glyphicon-ok"></span>
+                                </button>-->
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-remove"></span> Cancel
+                        </button>
+                        <!--<p>Need <a href="#">help?</a></p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container (school Section) -->
+    <!--<div id="school" class="container text-center">
+        <h3>i SCHOOL</h3>
+        <p><em>স্বদেশে পুজ্জতে রাজা , বিদ্বান সর্বত্র পুজ্যতে !</em></p>
+        <div class="row ">
+            <div class="col-sm-12" style="text-align:center">
+                <a href="#demo">
+                    <img src="chobi/iSchoolE.jpg" class="image-responsive img-rounded navbar-center " align="center">
+                </a>
+            </div>
+        </div>
+        <div class="rows" style="text-align:justify">
+            <div class="acontent">
+                <p>
+                    <strong>
+                        The Bengali School will be held on second Sunday of every month, except for
+                        long weekends or other exigencies. In case of long weekends or exigencies, the Bengali
+                        School will be held on a preceding or following Sunday, as per convenience, which
+                        will be separately notified by Chairperson of Bengali School Committee.
+                        The Bengali School hours will be from 12 noon to 3:30 p.m., as per the following
+                        schedule:
+                    </strong>
+                </p>
+                <p>
+                    <strong></strong>
+                </p>
+                <br />
+                <table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+                    <tbody>
+                        <tr>
+                            <td>
+                                12 noon-12:30 p.m
+                            </td>
+                            <td>
+                                Lunch
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:45-1:15
+                            </td>
+                            <td>
+                                Drawing for Children
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                12:45-1:15
+                            </td>
+                            <td>
+                                Bollywood Dance for Adults
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1:30-2:15
+                            </td>
+                            <td>
+                                Bengali Language and Poetry
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2:30-3:15
+                            </td>
+                            <td>
+                                Open Slot
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3:30
+                            </td>
+                            <td>
+                                Disperse
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    <strong>
+                        Sandwiches will be provided for Lunch by Ankur. Any parent is welcome to bring
+                        any additional food item for all the children.
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        <span style="text-decoration: underline;">Drawing</span> </br>
+                        <span style="font-style: italic;">Special Instruction : </span>All children taking
+                        drawing classes should bring: A Drawing Book (11 x 17 inches), one box of at least
+                        24 color pencils, one 2B pencil, one 4B pencil, a soft eraser and one sharpener.&nbsp;
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        <span style="text-decoration: underline;">The Bollywood Dance classes</span> </br>
+                        <span style="font-style: italic;">
+                            Special Instruction : Will run parallel with the drawing
+                            class for children &nbsp;
+                        </span>
+                    </strong>
+                </p>
+                <p>
+                    <strong><span style="text-decoration: underline;">Bengali Language and Poetry </span></strong>
+                </p>
+                <p>
+                    <strong>
+                        An open slot is being kept for instructions in Chess, Carnatic
+                        Music and Bharat Natyam, depending on the availability
+                        of students.&nbsp;
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        An Attendance Register will be maintained for each of the classes. Parents are
+                        requested to ensure that they sign in on behalf of their children when they attend
+                        the classes. This will enable Ankur to issue appropriate Certificates at the end
+                        of the year.&nbsp;
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        In order to ensure that the classes are held and there is no wastage of food,
+                        the parents are requested to inform the Chairperson of Bengali School Committee
+                        about the availability of their children at least four days before the school date
+                        of every month, by e mail. &nbsp;
+                    </strong>
+                </p>
+            </div>
+        </div>
+    </div>-->
+    <!-- Container (Sponsors Section) -->
+    <div id="spon" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">SPONSORS</h3>
+            <p class="text-center"><br></p>
+            <!--<ul class="list-group">
+                <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">November <span class="badge">3</span></li>
+            </ul>-->
+            <div class="row text-center">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/ApexDental.png" class="img-rounded" alt="ApexDental" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/CelerSystems.jpg" class="img-rounded" alt="CelerSystems" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/Kumon.jpg" class="img-rounded" alt="Kumon" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/NewHorizon.png" class="img-rounded" alt="NewHorizon" width="300" height="300">
+                    </div>
+                </div>
+                <!--<div class="col-sm-6 col-xs-6" id="amznCharityBanner">
+                    <script type="text/javascript">(function () { var iFrame = document.createElement('iframe'); iFrame.style.display = 'none'; iFrame.style.border = "none"; iFrame.width = 310; iFrame.height = 256; iFrame.setAttribute && iFrame.setAttribute('scrolling', 'no'); iFrame.setAttribute('frameborder', '0'); setTimeout(function () { var contents = (iFrame.contentWindow) ? iFrame.contentWindow : (iFrame.contentDocument.document) ? iFrame.contentDocument.document : iFrame.contentDocument; contents.document.open(); contents.document.write(decodeURIComponent("%3Cdiv%20id%3D%22amznCharityBannerInner%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsmile.amazon.com%2Fch%2F26-2948609%22%20target%3D%22_blank%22%3E%3Cdiv%20class%3D%22text%22%20height%3D%22%22%3E%3Cdiv%20class%3D%22support-wrapper%22%3E%3Cdiv%20class%3D%22support%22%20style%3D%22font-size%3A%2025px%3B%20line-height%3A%2028px%3B%20margin-top%3A%2029px%3B%20margin-bottom%3A%2029px%3B%22%3ESupport%20%3Cspan%20id%3D%22charity-name%22%20style%3D%22display%3A%20inline-block%3B%22%3EAnkur%20Inc.%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cp%20class%3D%22when-shop%22%3EWhen%20you%20shop%20at%20%3Cb%3Esmile.amazon.com%2C%3C%2Fb%3E%3C%2Fp%3E%3Cp%20class%3D%22donates%22%3EAmazon%20donates.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cstyle%3E%23amznCharityBannerInner%7Bbackground-image%3Aurl(https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fx-locale%2Fpaladin%2Fcharitycentral%2Fbanner-background-image._CB309675353_.png)%3Bwidth%3A300px%3Bheight%3A250px%3Bposition%3Arelative%7D%23amznCharityBannerInner%20a%7Bdisplay%3Ablock%3Bwidth%3A100%25%3Bheight%3A100%25%3Bposition%3Arelative%3Bcolor%3A%23000%3Btext-decoration%3Anone%7D.text%7Bposition%3Aabsolute%3Btop%3A20px%3Bleft%3A15px%3Bright%3A15px%3Bbottom%3A100px%7D.support-wrapper%7Boverflow%3Ahidden%3Bmax-height%3A86px%7D.support%7Bfont-family%3AArial%2Csans%3Bfont-weight%3A700%3Bline-height%3A28px%3Bfont-size%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.when-shop%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.donates%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A21px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D%3C%2Fstyle%3E")); contents.document.close(); iFrame.style.display = 'block'; }); document.getElementById('amznCharityBanner').appendChild(iFrame); })();</script>
+                </div>-->
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/SMUD.gif" class="img-rounded" alt="SMUD" width="300" height="300">
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/SMACLogo.png" class="img-rounded" alt="ArtCommission" width="300" height="300">
+                    </div>
+                </div>
+                <!--<div class="col-sm-3 col-xs-6">
+                    <div class="thumbnail">
+                        <img src="chobi/2kaFwOkA.png" class="img-rounded" alt="NewHorizon" width="300" height="300">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div id="maneg" class="container text-center">
+        <h3>MANAGEMENT</h3>
+        <p><em>Ankur Board of Directors</em></p>
+        <p></p>
+        <br>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <a href="#demo11" data-toggle="collapse">
+                    <img src="chobi/mgm/JeetPoddar.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a><br>
+                <p class="text-center"><span class="label label-danger">President : </span><br />Jeet Poddar </p>
+                <div id="demo11" class="collapse">
+                    <p>(916) 705-0277</p>
+                    <p>Loves fishing and camping</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="#demo12" data-toggle="collapse">
+                    <img src="chobi/mgm/vp.jpg" class="img-circle person" alt="Random Name" width="255"
+                        height="255">
+                </a><br>
+                <p class="text-center"><span class="label label-danger">Vice President : </span><br />Sudd Ghosh </p>
+                <div id="demo12" class="collapse">
+                    <p>(650) 291-4276</p>
+                    <p>The joyful helper</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="#demo13" data-toggle="collapse">
+                    <img src="chobi/mgm/tres.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+                </a><br>
+                <p class="text-center"><span class="label label-danger">Treasurer : </span> <br />Goutam Panda</p>
+                <div id="demo13" class="collapse">
+                    <p>(630) 247-8883</p>
+                    <p>Connecting people</p>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="#demo14" data-toggle="collapse">
+                    <img src="chobi/mgm/sec.jpg" class="img-circle person" alt="Random Name" width="255"
+                        height="255">
+                </a><br>
+                <p class="text-center"><span class="label label-danger">Secretary : </span><br /> Krishna Datta</p>
+                <div id="demo14" class="collapse">
+                    <p>(916) 841-8748</p>
+                    <p>Cricket and cooking</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="Managementaccordion">
+                <div class="card">
+                    <div class="card-header">
+                        <!--<!--<a class="card-link" role="button" data-toggle="collapse" href="#CommunityCouncil" aria-expanded="false">-->
+                        <ul class="list-group collapsed" role="button" data-toggle="collapse" href="#CommunityCouncil"
+                            aria-expanded="false">
+                            <li class="list-group-item ">Community Council </li>
+                        </ul>
+                        <!--</a>-->
+                    </div>
+                    <div id="CommunityCouncil" class="collapse" data-parent="#Managementaccordion">
+                        <div class="card-body">
+                            <table class="table table-hover" style="text-align:initial">
+                                <tbody>
+                                    <tr>
+                                        <td class="col-xs-6 .col-sm-4">Advisory Committee & Member at Large </td>
+                                        <td class="col-xs-2 .col-sm-4"> - </td>
+                                        <td class="col-xs-6 .col-sm-4">
+                                            Anita Ghoshal, Jeet Poddar<br /> 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6 .col-sm-4">Election Committee </td>
+                                        <td class="col-xs-2 .col-sm-4"> - </td>
+                                        <td class="col-xs-6 .col-sm-4">Soumya Chakraborty <br /> Amar Hariharan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Legal & Tax Advisor </td>
+                                        <td> - </td>
+                                        <td>Sudd Ghosh</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6 .col-sm-4">Social & Outreach Chair </td>
+                                        <td class="col-xs-2 .col-sm-4"> - </td>
+                                        <td class="col-xs-6 .col-sm-4">Aniruddha Bhattacharya</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card">
+                        <ul class="list-group collapsed" role="button" data-toggle="collapse" href="#ExecutiveCommittee"
+                            aria-expanded="false">
+                            <li class="list-group-item">Executive Committee</li>
+                        </ul>
+                    </div>
+                    <div id="ExecutiveCommittee" class="collapse" data-parent="#Managementaccordion">
+                        <div class="card-body">
+                            <div class="acontent">
+                                <table class="table table-hover" border="0" cellpadding="5" cellspacing="3" style="text-align:initial">
+                                    <tr>
+                                        <td>Bengali School</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Shyamal Chattaraj
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magazine</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Tandra Banerjee
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Public Relationship</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Debasish Maity, Atanu De
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Website</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Krishna Datta
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Food</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Debraj Ganguly, Ganesh Pal, Shovick Bhattacharya, Subir Sarkar, Dipak Pandey
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Finance</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Goutam Panda, Sudd Ghosh
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cultural</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Shyamal Chattaraj, Debashis Maity, Sreetama Mookherjee, Beena Amarnath
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sound and Light </td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                             Amar Hariharan
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Puja</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Shyamal Chattaraj, Tandra Banerjee, Abhishek Bhattacharya,
+Archita (Rini) Biswas,  Sangeeta Bhattacharya,  Lakshmi Guha, Rita Bera,
+Mousumi Roy
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Photo and Video</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Debashis Mandal
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Event Manager</td>
+                                        <td class="col-md-1"> - </td>
+                                        <td>
+                                            Atanu De, Soumya Chakraborty, Sajal Roy
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card">
+                        <ul class="list-group collapsed" role="button" data-toggle="collapse" href="#AnkurLegal"
+                            aria-expanded="false">
+                            <li class="list-group-item">Legal Documents</li>
+                        </ul>
+                    </div>
+                    <div id="AnkurLegal" class="collapse" data-parent="#Managementaccordion">
+                        <div class="card-body">
+                            <div class="acontent">
+                                <table class="table table-hover" border="0"  cellpadding="5" cellspacing="3" style="text-align:center">
+                                    <tr>
+                                        <td><a target="_new" href="legal/FOUNDING_DOCUMENT.pdf">Founding Document</a></td>
+                                        <td><a target="_new" href="legal/Ankur_IRS_letter.pdf">Ankur IRS Letter</a></td>
+                                        <td><a target="_new" href="legal/Attorney_GeneralAnkur_Inc.pdf">Attorney General Ankur Inc</a></td>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Container (gallery Section) -->
+    <div id="gallery" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">GALLERY</h3>
+            <!--<p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+            <ul class="list-group">
+                <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li>
+                <li class="list-group-item">November <span class="badge">3</span></li>
+            </ul>-->
+            <div class="row text-center">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="300" height="169" src="https://www.youtube.com/embed/KP3rUhe5d40"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Ankur Introduction</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="300" height="169" src="https://www.youtube.com/embed/Y34hXYj3aOY"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Ankur Documentary - Arts & Culture</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="300" height="169" src="https://www.youtube.com/embed/GGmq4_MR13k"
+                                allowfullscreen></iframe>
+                        </div>
+                        <p>Bijoya 2017</p>
+                    </div>
+                </div>
+                <!--<div class="col-sm-4">
+                    <div class="thumbnail">
+
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="https://photos.app.goo.gl/DlDr3S2xNRFj5unw2" target="_blank">Ankur Holi 2018</a></li>
+                            <li class="list-group-item">Aankh Me Choli </li>
+                            <li class="list-group-item">Maardo Goli </li>
+                        </ul>
+                        <p><strong>2018 Event gallery</strong></p>
+                    </div>
+                </div>-->
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2020
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Picture Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/md2nNFxDw41B1ha9A">Saraswati
+                                Puja</a></li>
+                                <li><a class="dropdown-item" target="_new" href=" https://www.youtube.com/watch?v=OVAv4SdRfNA">
+                                    eBaishakhi 2020</a></li>
+                                    <li><a class="dropdown-item" target="_new" href=" https://photos.app.goo.gl/KHbAkCxn34NZtXHV8">
+                                        Durga Pojo 2020 Photos</a></li>
+                                        <li><a class="dropdown-item" target="_new" href=" https://www.youtube.com/channel/UCkX41vtQDIf0dWwVLgkNvPQ/videos">
+                                            Durga Pojo 2020 Videos</a></li>
+
+                                        
+                               
+                        
+                    </ul>
+
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"> Pictures</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/md2nNFxDw41B1ha9A">Saraswati
+                            Puja</a></li>
+                            <li><a class="dropdown-item" target="_new" href=" https://www.youtube.com/watch?v=OVAv4SdRfNA">
+                                eBaishakhi 2020</a></li>
+                                <li><a class="dropdown-item" target="_new" href=" https://photos.app.goo.gl/KHbAkCxn34NZtXHV8">
+                                    Durga Pojo 2020 Photos</a></li>
+                                    
+
+
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Videos</li>
+                        <li><a class="dropdown-item" target="_new" href=" https://www.youtube.com/channel/UCkX41vtQDIf0dWwVLgkNvPQ/videos">
+                            Durga Pojo 2020 Videos</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Other Doc Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://drive.google.com/file/d/1CDyIO3FS_jBvuQpsj9oV8jI6CrRKbXCA/view">Yearly
+                                Magazine - Dishari(দিশারী), 2020</a></li>
+                    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2019
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Picture Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/MheBb3WShV5s5gg9A">
+                            Basant Panchami - Festival of Knowledge</a></li>
+                         <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/kPSU8QVryPxf7qHU8">
+                            Holi - Festival of Color</a></li>
+                        
+                            <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/YZmu5HwqokiJ4uxFA">
+                                Camping</a></li>
+
+                                <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/uZtLtnyfKeqzjuCr6">
+                                    Annual Picnic</a></li>
+                                    <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/SBzxb3FxxAouPQVz8">
+                                        Sports Day</a></li>
+                                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/9ahDqg89cYfKmNmU9">
+                                            Durga Puja</a></li>
+                                            <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/qPvNjGczvRh6gX3JA">
+                                                Lakshmi Puja</a></li>
+                                                <li><a class="dropdown-item" target="_new" href="http://ankurinc.org/Ankur_HTML5/content/dishari_latest.pdf">
+                                                    Dishari 2019</a></li>
+                                                    <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/xchtWDqvjqVUTmcv8">
+                                                        Year End Party</a></li>
+
+                       
+                    </ul>
+
+
+                     <ul class="dropdown-menu">
+                        <li class="dropdown-header"> Pictures</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/6RHS1Qem8irS9ynB9">Durga Puja</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="
+                        ">Basant
+                                Panchami</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/vBMiHL5ssMBsEtNF7">Holi
+                                Celebration</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/Kd4ddxoLCfPXsPd5A">Camping</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/6ovA4AtQEVnUbSHA6">Picnic</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/H6k6UxTuAP8sQfvs7">Volunteer Appreciation</a></li>
+
+
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Videos</li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/2tAZxEThPRE">Kid's Drama</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/fJVUEp9EMRw">Kid's Group Song</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/VULAUJ_qU20">Kanta Laga by Shohini</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/qFxnL-I_8c4">Happy New Year</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/f12MKpTM3sA">Basant Panchami-
+                                Intro</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/cmaKQ9TAcmA">Basant Panchami
+                                program I</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/TWLqpexsSGQ">Basant Panchami
+                                program II</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/KpeoWGThf_M">Basant Panchami
+                                program III</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/FP3t1taoSlQ">Basant Panchami
+                                program IV</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/jmuAqbREjDU">Basant Panchami
+                                program V</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/Y4CNj-VyZG4">Basant Panchami
+                                program VI</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/TjMNB6nSG3g">Basant Panchami
+                                program VII</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/7N-6vW1IaTU">Happy Mother's
+                                day</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Other Doc Links</li>
+                        <li><a class="dropdown-item" target="_new" href="chobi/Magazine/Dishari 2018.pdf">Yearly
+                                Magazine - Dishari(দিশারী), 2018</a></li>
+                    </ul>
+                  
+
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2018
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header"> Pictures</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/6RHS1Qem8irS9ynB9">Durga Puja</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="
+                        ">Basant
+                                Panchami</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/vBMiHL5ssMBsEtNF7">Holi
+                                Celebration</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/Kd4ddxoLCfPXsPd5A">Camping</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/6ovA4AtQEVnUbSHA6">Picnic</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://photos.app.goo.gl/H6k6UxTuAP8sQfvs7">Volunteer Appreciation</a></li>
+
+
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Videos</li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/2tAZxEThPRE">Kid's Drama</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/fJVUEp9EMRw">Kid's Group Song</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/VULAUJ_qU20">Kanta Laga by Shohini</a></li>
+
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/qFxnL-I_8c4">Happy New Year</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/f12MKpTM3sA">Basant Panchami-
+                                Intro</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/cmaKQ9TAcmA">Basant Panchami
+                                program I</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/TWLqpexsSGQ">Basant Panchami
+                                program II</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/KpeoWGThf_M">Basant Panchami
+                                program III</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/FP3t1taoSlQ">Basant Panchami
+                                program IV</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/jmuAqbREjDU">Basant Panchami
+                                program V</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/Y4CNj-VyZG4">Basant Panchami
+                                program VI</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/TjMNB6nSG3g">Basant Panchami
+                                program VII</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/7N-6vW1IaTU">Happy Mother's
+                                day</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Other Doc Links</li>
+                        <li><a class="dropdown-item" target="_new" href="chobi/Magazine/Dishari 2018.pdf">Yearly
+                                Magazine - Dishari(দিশারী), 2018</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2017
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Picture Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.google.com/share/AF1QipO4yce4IGSjXZEsptb74IzexAW95yP2GwF1peLUnZrTwVlrCqtXpZp6HzWxMfo_CA?key=S2VGZjdDNU9EOW5WUmJfbVJwaEl0eDVVdkh3MHR3">Durga
+                                Puja 2017</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.google.com/share/AF1QipPofq7nYgkkiUMkIYbiFMJZpfMnBeJrwuTJr-BwQ5bWnCbT9dS_u26X5LE6FNshdg?key=dmVZWHVEY1g2b1AtVHVqNC1kTm5nU3V3ZFVrcnhn">Holi
+                                2017, দোল</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Video Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/rSGnaPa4U_c">Basanta
+                                Panchami: Dance I</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/LBohVmR4soc">Basanta
+                                Panchami: Dance II</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/5DisuO83JmI">Basanta
+                                Panchami: Dance III</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/SWtnly7sXrM">Ankur Holi 2017</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/zNIqKwUX5NA">Drama: TuTu
+                                Bhutu</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/oU5hS4sV4BI">Standup comedy:
+                                bhagnankur</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/yp2dpU6uIZo">Dance by Ankur
+                                Ladies I</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/E4_72PeX0VU">Dance by Ankur
+                                Ladies II</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/4s_HmM2XaIE">Dance by Ankur
+                                Ladies III</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/VSLxhTFHjXs">Agomoni Barta</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/I61jRgnoQvM">Recitation -
+                                Irani</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/LZBwzGdNpMo">recitation -
+                                Rajrita</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://youtu.be/GGmq4_MR13k">Shubho Bijoya</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Other Doc Links</li>
+                        <li><a class="dropdown-item" target="_new" href="chobi/Magazine/Dishari 2017.pdf">Yearly
+                                Magazine - Dishari(দিশারী), 2017</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2016
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Picture Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.google.com/share/AF1QipO4yce4IGSjXZEsptb74IzexAW95yP2GwF1peLUnZrTwVlrCqtXpZp6HzWxMfo_CA?key=S2VGZjdDNU9EOW5WUmJfbVJwaEl0eDVVdkh3MHR3">Durga
+                                Puja 2016</a></li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.google.com/share/AF1QipPofq7nYgkkiUMkIYbiFMJZpfMnBeJrwuTJr-BwQ5bWnCbT9dS_u26X5LE6FNshdg?key=dmVZWHVEY1g2b1AtVHVqNC1kTm5nU3V3ZFVrcnhn">Holi
+                                2016, দোল</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Video Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://www.youtube.com/playlist?list=PLox0qO4-6M8jKmXB5VlARoxyLaLbuli5L">Drama:
+                                Paruler Abhijaan</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Other Doc Links</li>
+                        <li><a class="dropdown-item" target="_new" href="chobi/Magazine/Dishari 2016.pdf">Yearly
+                                Magazine - Dishari(দিশারী), 2016</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Events of 2015
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Picture Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://photos.google.com/share/AF1QipPO3dMI-NdDbUTr7bwPBIxMvCG-vvvXMylpxwH_HNAsLa94y9hS5i3pe96Yb0ydcQ?key=SGJMTm1IaEwwVnNxX2l0di1za0s4VnVSNGxENjRn">Durga
+                                Puja 2015</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Video Links</li>
+                        <li><a class="dropdown-item" target="_new" href="https://www.youtube.com/playlist?list=PLox0qO4-6M8jrUKnemjNDKQQKxJcj--Mi">Drama:
+                                Case Solved</a></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per
+                                person</label>
+                            <input type="number" class="form-control" id="psw" placeholder="How many?">
+                        </div>
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                            <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                        </div>
+                        <button type="submit" class="btn btn-block">
+                            Pay
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span> Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="AnweshaDurnibar" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/DP Artists.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sPuja" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/Sarayati_Puja.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="covid19_alert" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/topic/Covid19.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dp2020_alert" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/eventDurgaPuja2020.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dp2020Program_alert" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/eventDP2020Program.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="sPujaMisc1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/event_SP_Misc1.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sPujaMFlyer1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/Saraswati Puja_Flyer 2019.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="holiFlyer1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/evnHoli1.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="sportsDayFlyer" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/sports_day.jpeg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="summarEvenetFlyer1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="chobi/events/AnkurSummarEvents.jpeg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div id="sPujaNomination" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV4AsnKbm0cwC7OzKozYHy2f9_ADnhUZGeCse4IIoVWFg3Xg/viewform?embedded=true" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="eventSchedule" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="chobi/events/Ankur_Schedule.jpg" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container">
+        <h3 class="text-center">JOIN US</h3>
+        <p class="text-center"><em>Our Members are our family!</em></p>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Please drop us a note.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> California, US</p>
+                <p><span class="glyphicon glyphicon-phone"></span> Phone: +1 (916) 57-ANKUR</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> Email: <a href="mailto:Ankursacpr08@gmail.com">
+                        Ankursacpr08@gmail.com</a></p>
+                <p>
+                    Visit us: <a href="http://ankurinc.org"> http://ankurinc.org</a>
+                </p>
+                <a href="https://www.facebook.com/ankur.sac.1" target="_blank" class="fa fa-facebook" title="Join Ankur on Facebook"></a>
+                <a href="#contact" class="fa fa-twitter"></a>
+                <a href="#contact" class="fa fa-google"></a>
+                <a href="#contact" class="fa fa-linkedin"></a>
+                <a href="#contact" class="fa fa-youtube"></a>
+                <br />
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<h3 class="text-center">From The Blog</h3>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
+            <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
+            <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h2>Mike Ross, Manager</h2>
+                <p>Man, we've been on the road for some time now. Looking forward to lorem ipsum.</p>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h2>Chandler Bing, Guitarist</h2>
+                <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h2>Peter Griffin, Bass player</h2>
+                <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+            </div>
+        </div>-->
+    </div>
+    <!-- Add Google Maps -->
+    <!--<div id="googleMap"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
+    <!--
+    To use this code on your website, get a free API key from Google.
+    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+    -->
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a><br>
+        <p>All rights reserved. © 2018 Ankur Inc. http://ankurinc.org 6601 Coyle Avenue, Carmichael, CA 95608. EIN #
+            26-2948609. Contact: (916)57-ANKUR</p>
+        <div class="container-fluid" align="center">
+            <a class="header-btn" href="#myPage"> Carmichael </a> |
+            <a class="header-btn" href="#myPage"> Citrus Heights </a> |
+            <a class="header-btn" href="#myPage"> Davis </a> |
+            <a class="header-btn" href="#myPage"> El Dorado Hills </a> |
+            <a class="header-btn" href="#myPage"> Elk Grove </a> |
+            <a class="header-btn" href="#myPage"> Folsom </a> |
+            <a class="header-btn" href="#myPage"> Gold River </a> |
+            <a class="header-btn" href="#myPage"> Natomas </a> |
+            <a class="header-btn" href="#myPage"> Reddin </a> |
+            <a class="header-btn" href="#myPage"> Rocklin </a> |
+            <a class="header-btn" href="#myPage"> Roseville </a> |
+            <a class="header-btn" href="#myPage"> Yuba City </a>
+        </div>
+    </footer>
+    <script>
+
+       
+        $(document).ready(function () {
+
+            $("#covid19_info").click();
+
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+
+      
+        /*Hiding menue on click START*/
+        $(document).on('click', '.navbar-collapse', function (e) {
+            if ($(e.target).is('img:not(".dropdown-toggle")') || $(e.target).is('a:not(".dropdown-toggle")')) {
+                $(this).collapse('hide');
+            }
+        });
+        /*Hiding menue on click END*/
+
+
+
+        $(document).ready(function () {
+            function ananda_check_scroll() {
+                var t_s = $(this).scrollTop();
+                var blogo = document.getElementById("BLogo");
+
+
+                if (t_s > 100) {
+                    $('.nav_fix_scroll').addClass('navbar-fixed-top');
+                    blogo.style.visibility = "visible";
+
+                } else {
+                    $('.nav_fix_scroll').removeClass('navbar-fixed-top');
+                    if ($(window).width() > 767) {
+                        blogo.style.visibility = "hidden";
+
+                    }
+                }
+            };
+
+            $(window).on('scroll', ananda_check_scroll);
+            if ($(window).width() < 768) {
+                setTimeout(function () {
+                    $('.init_height').remove();
+                    $('.check_class_1').css('display', 'block');
+                }, 500);
+
+                $('.check_class').removeClass('nav_fix_scroll').addClass('navbar-fixed-top');
+                $('.check_class_1').removeClass('bg-header').addClass('m50');
+            }
+        });
+
+        var $$ = function (tagname) {
+            return document.getElementsByTagName(tagname);
+        }
+
+        function onYouTubeIframeAPIReady() {
+            var videos = $$('iframe'), // the iframes elements
+                players = [], // an array where we stock each videos youtube instances class
+                playingID = null; // stock the current playing video
+            for (var i = 0; i < videos.length; i++) // for each iframes
+            {
+                var currentIframeID = videos[i].id; // we get the iframe ID
+                players[currentIframeID] = new YT.Player(currentIframeID); // we stock in the array the instance
+                // note, the key of each array element will be the iframe ID
+
+                videos[i].onmouseover = function (e) { // assigning a callback for this event
+                    var currentHoveredElement = e.target;
+                    if (playingID) // if a video is currently played
+                    {
+                        players[playingID].pauseVideo();
+                    }
+                    players[currentHoveredElement.id].playVideo();
+                    playingID = currentHoveredElement.id;
+                };
+            }
+
+        }
+        onYouTubeIframeAPIReady();
+    </script>
+</body>
+
+</html>
