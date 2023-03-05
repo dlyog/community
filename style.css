@@ -1,0 +1,58 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-nav li {
+    margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    width: 90%;
+    max-width: 800px;
+}
+.modal-body {
+    padding: 0;
+}
+.modal-body iframe {
+    width: 100%;
+    height: calc(100vh - 150px);
+    border: none;
+}
+@media (max-width: 767px) {
+    .modal-body iframe {
+        height: calc(100vh - 200px);
+    }
+}
+
